@@ -1,0 +1,29 @@
+<h1>Listing imagequestions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>File name</th>
+      <th>Text description</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @imagequestions.each do |imagequestion| %>
+      <tr>
+        <td><%= imagequestion.file_name %></td>
+        <td><%= imagequestion.hint %></td>
+        <td><%= imagequestion.category %></td>
+        <td><%= link_to 'Show', imagequestion %></td>
+        <td><%= link_to 'Edit', edit_imagequestion_path(imagequestion) %></td>
+        <td><%= link_to 'Destroy', imagequestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Imagequestion', new_imagequestion_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>File name:</strong>
+  <%= @imagequestion.file_name %>
+</p>
+
+<p>
+  <strong>Text description:</strong>
+  <%= @imagequestion.hint %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @imagequestion.category %>
+</p>
+
+<%= link_to 'Edit', edit_imagequestion_path(@imagequestion) %> |
+<%= link_to 'Back', imagequestions_path %>

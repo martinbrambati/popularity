@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Option label:</strong>
+  <%= @option.option_label %>
+</p>
+
+<p>
+  <strong>Option result:</strong>
+  <%= @option.option_result %>
+</p>
+
+<p>
+  <strong>Imagequestion:</strong>
+  <%= @option.imagequestion %>
+</p>
+
+<%= link_to 'Edit', edit_option_path(@option) %> |
+<%= link_to 'Back', options_path %>

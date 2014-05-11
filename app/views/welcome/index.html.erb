@@ -1,0 +1,8 @@
+<h1>Popularity v 0.0.1</h1>
+<p>
+<%= form_tag("/start", method: "get") do %>
+  <%= label_tag(:Category, "Category:") %>
+  <%= collection_select(:category, :id, Category.all, :id, :name, {}, {:class=>'my-custom-class'}) %>
+  <%= submit_tag("Play!") %>
+<% end %>
+</p>

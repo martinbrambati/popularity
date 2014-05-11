@@ -1,0 +1,28 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$def-width:256px;
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.options-choose{
+	width: $def-width;
+}
+.result{
+	.true{
+	}
+	.false{
+	}
+}

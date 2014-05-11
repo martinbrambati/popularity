@@ -1,0 +1,13 @@
+<h1><%=@imagequestion.hint%></h1>
+<%= image_tag("/images/#{@imagequestion.category.id}/#{@imagequestion.file_name}", 
+	width: "256")
+%>  
+<%= form_tag("/end", method: "get") do %>
+<p>
+<%=	collection_radio_buttons(:option, :id, @options, :id, :option_label, {}, {}) %>
+</p>
+
+<%= submit_tag("Test!") %>
+
+<% end %>
+</p>

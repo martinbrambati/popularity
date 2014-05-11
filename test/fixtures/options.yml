@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  option_label: MyString
+  option_result: false
+  imagequestion_id: 
+
+two:
+  option_label: MyString
+  option_result: false
+  imagequestion_id: 

@@ -62,7 +62,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  get 'start' => 'welcome#start'
-  get 'end' => 'welcome#end'
-
+  resources :welcome do
+    member do
+      get 'play'
+    end
+  end
 end

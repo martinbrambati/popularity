@@ -3,6 +3,8 @@
 		<%=@result%>
 	</div>
 	<div>
-		<%= link_to 'Play again!', root_path %>
+		<%= link_to 'Play again!', '/start/?category%5Bid%5D%3D'+1.to_s %>
+
+		<%= link_to 'Try another category!', root_path %>
 	</div>
 </h1>

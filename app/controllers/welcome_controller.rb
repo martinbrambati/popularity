@@ -15,7 +15,7 @@ class WelcomeController < ApplicationController
     end
 
     def set_image
-      @imagequestion = Imagequestion.next @category if @category
+      @imagequestion = Imagequestion.next(@category, params[:imagequestion_id])
     end
 
     def set_options

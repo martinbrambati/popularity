@@ -62,9 +62,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  resources :welcome do
-    member do
-      get 'play'
-    end
-  end
+  match ':controller/:action/:id/:imagequestion_id', via: [:get]
 end
